@@ -4289,7 +4289,7 @@ a.solution-btn:hover span {
 }
 
 .subscription-area {
-    padding: 40px 270px 45px 270px;
+    padding: 40px;
     background: #3464e0;
 }
 .subscription-wrapper input[type="email"] {
@@ -4329,7 +4329,7 @@ a.solution-btn:hover span {
     display: inline-block;
 }
 .footer-main {
-    padding: 100px 0px 70px 0px;
+    padding: 50px 0px 70px 0px;
 }
 .footer-single-item p {
     color: #a3b0d7;
@@ -4339,7 +4339,7 @@ a.solution-btn:hover span {
 }
 
 p.contact-info {
-    padding-left: 80px;
+    padding-left: 120px;
     margin-bottom: 8px;
     position: relative;
 }
