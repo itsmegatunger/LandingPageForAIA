@@ -1,11 +1,4 @@
-/* ============================================
-Template Name: Slake
-Template URI:
-Description: Hosting HTML5 Template
-Author:
-Author URI:
-Version: 1.0
-===================================================
+/* ===================================================
 
 ##CSS TABLE OF CONTENT
 --------------------------------
@@ -127,7 +120,47 @@ a:focus, a:hover {
     z-index: 9999999;
 }
 
+/* Main carousel style */
+.carousel {
+    width: 100%;
+}
 
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+.thumbails {
+    width: 100%; height:200px; overflow:hidden
+}
 /*----------------------------------------
 HEADER TOP STYLE
 ------------------------------------------*/
@@ -189,7 +222,7 @@ HEADER TOP STYLE
 }
 */
 .logo {
-    margin-top: -3px;
+    margin-top: 20px;
     margin-left: 10px;
 }
 .header-top-left a {
@@ -776,9 +809,10 @@ a.chart-btn {
 }
 
 .single-slider-item img.position-img-3 {
-    position: absolute;
+    /* position: absolute; */
     right: -36%;
-    top: 30px;
+    width: 100%;
+    top: -20vh;
 }
 .single-slider-item img.position-img-2 {
     position: absolute;
@@ -1520,10 +1554,69 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
 
 
 /**************HOMEPAGE 4****************/
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-height: 100%;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
 
 #homepage-3 .homepage-4 .header-top-area {
     background: transparent;
 }
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
 
 #homepage-3 .full-slider.homepage-4 {
     background-image: url(asset/img/bg/space.png);
@@ -1704,7 +1797,7 @@ h2.domain-heading-2 {
     box-shadow: 0px 15px 30px 0px rgba(0, 35, 37, 0.15); 
     padding: 25px;
     border-radius: 25px;
-    height: 600px;
+    height: 700px;
     transition: all .3s;
     margin-left: 10%;
 }
@@ -1835,6 +1928,7 @@ h2.domain-heading-2 {
   opacity: 0;
   border-radius: 20px;
   transition: all .3s;
+  overflow: hidden;
 }
 .blog-slider__img-cell {
     display: table-cell;
@@ -3002,10 +3096,11 @@ h3.domain-head {
 }
 .single-blog-1 img {
     width: 100%;
-    max-height: 100%;
+    /* max-height: 100%; */
     -webkit-transition: .3s;
     transition: .3s;
 }
+
 .single-blog-1 h2 {
     font-size: 24px;
     color: #3a4368 ;
@@ -4059,7 +4154,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.register-btn:hover {
 .testimonial-carousel .single-item .item-inner, .testimonial-wrapper .single-item .item-inner {    
     box-shadow: 0px 5px 25px 0px rgba(0, 56, 160, 0.15);
     background: #fff;
-    padding: 40px 40px 30px 40px;
+    padding: 40px 40px 0px 40px;
     overflow: hidden;
     height: 600px;
 }

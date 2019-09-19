@@ -1677,6 +1677,7 @@ section.hosting-plan-area.hosting-plan-area-affiliate .single-hosting-price h2 {
 #homepage-3 .full-slider.homepage-4{
     -webkit-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 .homepage-4 .plan-list ul li{
     color: #ffffff;
