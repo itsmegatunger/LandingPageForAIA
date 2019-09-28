@@ -3175,6 +3175,11 @@ h3.domain-head {
     min-height: 420px;
     max-height: 480px;
 }
+
+.core-value {
+    min-height: 650px!important;
+    max-height: 650px!important;
+}
 .homepage-2.blog-2-area {
     background-image: url(asset/img/bg/blog-area-2-bg.png);
     background-repeat: no-repeat;
@@ -8458,3 +8463,4 @@ button.notify {
     height: 100vh;
     border: 0px
 }
+
