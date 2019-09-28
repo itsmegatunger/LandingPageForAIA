@@ -120,6 +120,29 @@ a:focus, a:hover {
     z-index: 9999999;
 }
 
+.float-right {
+    position: fixed;
+    z-index: 9999;
+    bottom: 3%;
+    right: 3%;
+}
+.btn-round-lg{
+    border-radius: 22.5px;
+    margin-bottom: 8px;
+}
+.btn-round{
+    border-radius: 17px;
+}
+.btn-round-sm{
+    border-radius: 15px;
+}
+.btn-round-xs{
+    border-radius: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 /* Main carousel style */
 .carousel {
     width: 100%;
@@ -222,8 +245,6 @@ HEADER TOP STYLE
 }
 */
 .logo {
-    margin-top: 20px;
-    margin-left: 10px;
 }
 .header-top-left a {
     text-decoration: none;
@@ -871,7 +892,7 @@ a.chart-btn {
     position: absolute;
     left: 20.7%;
     margin-right: 0%;
-    top: 25%;
+    top: 10%;
     line-height: 64px;
     color: #ffffff;
 }
@@ -880,7 +901,7 @@ a.chart-btn {
     position: absolute;
     left: 20.7%;
     margin-right: 0%;
-    top: 44%;
+    top: 30%;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
@@ -891,7 +912,7 @@ a.chart-btn {
     position: absolute;
     left: 20.7%;
     margin-right: 0%;
-    top: 59%;
+    top: 30%;
     margin:30px 0px 0px 0px;
 }
 .slider-single-item.slider-single-item-2 .slider-heading {
@@ -902,7 +923,7 @@ a.chart-btn {
     right: 20.7%;
     left:auto;
     margin-right: 0%;
-    top: 25%;
+    top: 15%;
     line-height: 64px;
     color: #ffffff;
     text-align: right;
@@ -913,7 +934,7 @@ a.chart-btn {
     right: 20.7%;
     left:auto;
     margin-right: 0%;
-    top: 44%;
+    top: 35%;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
@@ -926,7 +947,7 @@ a.chart-btn {
     right: 20.7%;
     left:auto;
     margin-right: 0%;
-    top: 59%;
+    top: 40%;
     margin:30px 0px 0px 0px;
     text-align: right;
 }
@@ -1002,7 +1023,7 @@ a.chart-btn {
 }
 .slider-image0, .slider-image1 {
     position: absolute;
-    bottom: 18%;
+    bottom: 40%;
     right: 11%;
 }
 .slide-3 .slider-image0, .slider-image1 {
@@ -1086,7 +1107,7 @@ section.homepage-slider-2.slider-2-bg .slider-content h2 {
 }
 
 .slider-content h2 {
-    font-size: 42px;
+    font-size: 36px;
     color: #3a4368;
     line-height: 52px;
 }
@@ -1174,7 +1195,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
 }
 .slider-wrapper.slick-slider .slider-single-item.slider-single-item-3 .slider-image0 img {
     position: relative;
-    top: -90px;
+    top: 0px;
     left: -74px;    
     width: 400px;
     height: auto;
@@ -1189,7 +1210,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     transform: scale(1) translate(0px);
 }
 .slider-wrapper.slick-slider .slider-single-item.slider-single-item-2 .slider-image0 img {
-    width: 507px;
+    width: 450px;
     height: auto;
     transition: background-image 2s;
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 2)
@@ -1201,7 +1222,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     transform: scale(1) translate(0px);
 }
 .slider-wrapper.slick-slider .slider-single-item .slider-image0 img {
-    width: 400px;
+    width: 300px;
     height: auto;
     transition: background-image 2s;
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 2)
@@ -1215,13 +1236,14 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
    
 .slider-single-item.slider-single-item-2 .slider-image0, .slider-image1 {
     position: absolute;
-    bottom: 18%;
+    bottom: 30%;
     left: 15%;
     transition: all .3s ease-in-out;
 }
 
  .slider-single-item.slider-single-item-2 .slider-heading-btns a.download-btn.download-btn-2 {
-    padding: 16px 42px;
+    padding: 16px;
+    max-width: 250px;
     background-color: transparent;
     color: #ffffff;
     border-color: #ffffff;
@@ -1229,7 +1251,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     transition: all .3s ease-in-out;
 }
  .slider-single-item.slider-single-item-2 .slider-heading-btns a.download-btn {
-    padding: 16px 40px;
+    padding: 16px;
 }
 .slider-heading-btns a.download-btn.download-btn-2 i {
     font-size: 16px;
@@ -1258,7 +1280,8 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     border-color: #fff;
 }
 .slider-heading-btns a.download-btn.download-btn-2 {
-    padding: 16px 42px;
+    padding: 16px;
+    max-width: 250px;
     background-color: transparent;
     color: #ffffff;
     border-color: #ffffff;
@@ -1267,7 +1290,8 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
 }
 
 .slider-heading-btns a.download-btn {
-    padding: 16px 40px;
+    padding: 16px;
+    max-width: 250px;
     background-color: #3464e0;
     color: #ffffff;
     border-color: #3464e0;   
@@ -1277,7 +1301,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     position: absolute;
     left: 20.7%;
     margin-right: 0%;
-    top: 55%;
+    top: 40%;
     margin: 30px 0px 0px 0px;
 }
 
@@ -1486,7 +1510,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     color: #ffffff;
 }
 #homepage-3 .slider-content-element {
-    padding: 40px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 #homepage-3 .homepage-3-links li a.download-btn {
     display: block;
@@ -1508,7 +1532,7 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     padding: 40px 0px 224px 0px;
 }
 #homepage-3 .homepage-4 .slider-1-bg {
-    padding: 40px 0px 82px 0px;
+    padding: 0px 0px 82px 0px;
 }
 #homepage-3 .homepage-5.homepage-4 .slider-1-bg {
     padding: 40px 0px 170px 0px;
@@ -1622,6 +1646,7 @@ header {
     background-image: url(asset/img/bg/space.png);
     background-position: top right;
     background-size: 100%;
+    height: 450px;
 }
 #homepage-3 .full-slider.homepage-4.homepage-5 {
     background-image: url(asset/img/bg/homepage-5-bg.png);
@@ -1671,7 +1696,7 @@ header {
     color: #ffffff;
 }
 .homepage-4 .plan-list ul li {
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
     margin: 15px 0;
 }
@@ -1684,8 +1709,9 @@ header {
     color: #ffffff;
     background: #3464e0;
     border: 2px solid#3464e0;
-    padding: 13px 46px;
+    padding: 13px 25px;
     margin-right: 0px;
+    margin-top: 10px;
 }
 #homepage-3 .homepage-4 .homepage-3-links li a.download-btn:hover {
     background: #3464e0;
@@ -2916,6 +2942,7 @@ h3.domain-head {
 }
 
 .section-title p {
+    text-align: justify;
     padding: 0 230px;
     margin-top: 20px;
     color: #3e445b;
@@ -3137,6 +3164,7 @@ h3.domain-head {
     padding: 0 10px;
     line-height: 26px;
 }
+
 .homepage-2.blog-2-area .single-blog-1 {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -3144,6 +3172,8 @@ h3.domain-head {
     padding: 50px 30px 50px 30px;
     background-color: #ffffff;
     text-align: left;
+    min-height: 420px;
+    max-height: 480px;
 }
 .homepage-2.blog-2-area {
     background-image: url(asset/img/bg/blog-area-2-bg.png);
@@ -3161,9 +3191,11 @@ h3.domain-head {
     font-size: 15px;
     line-height: 26px;
     padding: 25px 0px 0px 0px;
+    text-align: justify;
 }
 .homepage-2.blog-2-area .single-blog-1 h2{
     color: #3a4368 ;
+    text-align: justify;
     font-size: 20px;
     margin: 30px 0px 0px 0px;
     -webkit-transition:all .3s ease-in-out;
@@ -3212,7 +3244,7 @@ h3.domain-head {
     padding-bottom: 120px;
 }
 .homepage-2.blog-2-area {
-    /* padding-top: 80px; */
+    padding-top: 80px;
     padding-bottom: 50px;
     z-index: 0;
     position: relative;
@@ -3718,6 +3750,7 @@ h3.domain-head {
     color: #3a4368;
     line-height: 26px;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .power-list {
@@ -4038,9 +4071,9 @@ button.service-nav-right.slick-arrow {
     background-color: #3464e0;
     position: relative;
     z-index: 0;
-    padding-top: 150px;
+    padding-top: 50px;
     background-repeat: no-repeat;
-    padding-bottom: 120px;
+    padding-bottom: 30px;
 }
 .register-heading h2 {
     font-size: 46px;
@@ -5813,7 +5846,11 @@ section.domain-chart-area {
     line-height: 1.42857143;
     vertical-align: middle;
     border-top: 1px solid #edf4fd;
-    padding-left: 21px;
+    /* padding-left: 21px; */
+    font-style: oblique;
+    font-weight: 700;
+    text-align: center;
+    font
 }
 
 tr {
@@ -6623,6 +6660,11 @@ p.single-contact-info a {
     color: #3e445b;
 }
 
+.price-hightlight {
+    font-weight: 700;
+    color: #3464e0;
+    margin-bottom: 0!important;
+}
 
 .get-in-touch {
     padding: 80px 30px;
