@@ -142,7 +142,66 @@ a:focus, a:hover {
     padding-right: 10px;
 }
 
+.flash-button{
+    font-size: 1.5em;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 20px -2px #debe31;
+    -moz-box-shadow: 0px 0px 20px -2px #debe31;
+    box-shadow: 0px 0px 20px -2px #debe31;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
 
+
+@-webkit-keyframes glowing {
+    0% { -webkit-box-shadow: 0 0 3px #007bff; 
+        transform: scale(1.0);
+    }
+    50% { -webkit-box-shadow: 0 0 40px #0065D1; 
+        transform: scale(1.1);
+    }
+    100% { -webkit-box-shadow: 0 0 3px #004FA3; 
+        transform: scale(1.0)
+    }
+  }
+  
+  @-moz-keyframes glowing {
+    0% { -webkit-box-shadow: 0 0 3px #007bff; 
+        transform: scale(1.0);
+    }
+    50% { -webkit-box-shadow: 0 0 40px #0065D1; 
+        transform: scale(1.1);
+    }
+    100% { -webkit-box-shadow: 0 0 3px #004FA3; 
+        transform: scale(1.0)
+    }
+  }
+  
+  @-o-keyframes glowing {
+    0% { -webkit-box-shadow: 0 0 3px #007bff; 
+        transform: scale(1.0);
+    }
+    50% { -webkit-box-shadow: 0 0 40px #0065D1; 
+        transform: scale(1.1);
+    }
+    100% { -webkit-box-shadow: 0 0 3px #004FA3; 
+        transform: scale(1.0)
+    }
+  }
+  
+  @keyframes glowing {
+    0% { -webkit-box-shadow: 0 0 3px #007bff; 
+        transform: scale(1.0);
+    }
+    50% { -webkit-box-shadow: 0 0 40px #0065D1; 
+        transform: scale(1.1);
+    }
+    100% { -webkit-box-shadow: 0 0 3px #004FA3; 
+        transform: scale(1.0)
+    }
+  }
 /* Main carousel style */
 .carousel {
     width: 100%;
@@ -1646,7 +1705,7 @@ header {
     background-image: url(asset/img/bg/space.png);
     background-position: top right;
     background-size: 100%;
-    height: 450px;
+    height: 460px;
 }
 #homepage-3 .full-slider.homepage-4.homepage-5 {
     background-image: url(asset/img/bg/homepage-5-bg.png);
