@@ -1,58 +1,3 @@
-/* ===================================================
-
-##CSS TABLE OF CONTENT
---------------------------------
-1. THEME BASIC CSS
-2. HEADER TOP STYLE
-3. NAVIGATION STYLE
-4. HOMEPAGE-1  SLIDER-1 STYLE
-5. HOME PAGE 2 STYLE SLIDER
-6. HOME 1 BG ANIMATION
-7. HOME 2 CLOUD ANIMATION 
-8. DOMAIN- STYLE SECTION
-9. SECTION-TITLE STYLE
-10. BLOG-1 STYLE
-11. PRICING TABLE STYLE
-12. FEATURE ONE STYLE
-13. FEATURE TWO STYLE
-14. FUN FACT STYLE
-15. SERVICE STYLE
-16. REGISTER STYLE
-17. TESTIMONIAL STYLE
-18. BRAND AREA STYLE
-19. CALL-TO-ACTION AREA STYLE
-20. FOOTER AREA STYLE
-21. FOOTER BOTOM AREA STYLE
-22. DOMAIN CHECKER AREA STYLE
-23. FAQ PAGE STYLE
-24. ABOUT.HTML STYLE
-25. TAB STYLE
-26. WELCOME AREA STYLE
-27. DOMAIN-SEARCH AREA STYLE
-28. DOMAIN-SEARCH-NOW AREA STYLE
-29. DOMAIN-FEATURE AREA STYLE
-30. HOSTING AREA.HTML STYLE
-31. CLOUD HOSTING.HTML STYLE
-32. DEDICATION.HTML HOSTING STYLE
-33. AFFILIATE HTML STYLE
-34. CART.HTMLAREA
-35.CHECK-OUT.HTMLAREA
-36.CONTACT.HTMLAREA
-37. ALL+FULL BLOG.HTMLAREA
-38. ALL+SHOP GRID STYLE
-39. 404 PAGE STYLE
-40. COMING SOON PAGE STYLE 
-41. MAP STYLE
-
-
-================================================ */
-
-
-/*----------------------------------------
-1. THEME BASIC CSS
-------------------------------------------*/
-
-
 html, body {
     padding: 0;
     margin: 0;
@@ -202,6 +147,35 @@ a:focus, a:hover {
         transform: scale(1.0)
     }
   }
+
+.crunchify-top:hover {
+	color: #fff !important;
+	background-color: #28A745;
+    text-decoration: none;
+    transform: scale(0.8);
+}
+ 
+.crunchify-top {
+    transition: all .1s ease-in-out;
+	display: none;
+	position: fixed;
+	bottom: 2rem;
+	left: 2rem;
+	width: 4.2rem;
+	height: 4.2rem;
+	line-height: 3.8rem;
+	font-size: 2.8rem;
+	color: #fff;
+	background-color: #2649a3;
+	text-decoration: none;
+	border-radius: 3.2rem;
+	text-align: center;
+    cursor: pointer;
+    z-index: 99999;
+    -webkit-box-shadow: -2px 17px 28px -9px rgba(0,0,0,0.47);
+    -moz-box-shadow: -2px 17px 28px -9px rgba(0,0,0,0.47);
+    box-shadow: -2px 17px 28px -9px rgba(0,0,0,0.47);
+}
 /* Main carousel style */
 .carousel {
     width: 100%;
@@ -6439,253 +6413,6 @@ section.working-affiliate-area {
     width: 100%;
     height: 100%;
 }
-/* =====================================
-16.CART.HTMLAREA
-===================================== */
-.cart-blog-area {
-    padding: 100px 0;
-}
-
-.cart-chart {
-    width: 100%;
-}
-
-table.cart-table {
-    width: 100%;
-    border: 1px solid#edf4fe;
-    border-bottom: 0px;
-    border-radius: 5px;
-}
-thead.cart-heading {
-    font-size: 18px;
-    color: #5dafef;
-    font-weight: 500;
-    background: #F6FAFF;
-}
-
-thead.cart-heading tr th {
-    padding: 25px 50px;
-}
-table.cart-table tbody tr td {
-    padding: 25px 50px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #3a4368 ;
-    vertical-align: middle;
-}
-.table {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-}
-
-
-.cart-blog-area .nice-select:after {
-    border-bottom: 3px solid #999;
-    border-right: 3px solid #999;
-    content: '';
-    display: block;
-    height: 9px;
-    margin-top: -6px;
-    pointer-events: none;
-    position: absolute;
-    right: 9px;
-    top: 50%;
-    -webkit-transform-origin: 66% 66%;
-    transform-origin: 66% 66%;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-    width: 9px;
-}
-.cart-blog-area .nice-select {
-    -webkit-tap-highlight-color: transparent;
-    clear: both;
-    cursor: pointer;
-    display: block;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: normal;
-    outline: none;
-    position: relative;
-    text-align: left !important;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: nowrap;
-    width: 78px;
-    border: 1px solid #d0e2f4;
-    padding: 6px;
-}
-td.total-bill button {
-    border: none;
-    background: transparent;
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: -1px;
-    outline: none;
-    display: inline-block;
-    position: relative;
-    right: -45%;
-
-}
-input#coupon_code {
-    border: 1px solid#d0e2f4;
-    padding: 12px;
-    font-size: 14px;
-    color: #536d87;
-}
-
-input.button {
-    background: #5dafef;
-    border: 1px solid#5dafef;
-    padding: 13px 20px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 12px;
-    position: absolute;
-}
-.order-summary h2 {
-    font-size: 20px;
-    color: #3a4368 ;
-    font-weight: 500;
-}
-.subtotal {
-    border: 1px solid#edf4fd;
-    padding: 15px 28px;
-    border-bottom-color: #fff;
-    border-radius: 5px;
-}
-
-.subtotal
- h2 {
-    font-size: 14px;
-    color: #536d87;
-}
-
-.subtotal
- h2 span {
-    float: right;
-}
-.vat {
-    border: 1px solid#edf4fd;
-    padding: 0px 28px;
-    border-top-color: #fff;
-}
-
-.vat
- h2 {
-    font-size: 14px;
-    color: #536d87;
-}
-
-.vat
- h2 span {
-    float: right;
-}
-.total {
-    border: 1px solid#edf4fd;
-    padding: 15px 28px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-
-
-.total
- h2 {
-    font-size: 14px;
-    color: #3a4368 ;
-}
-
-.total
- h2 span {
-    float: right;
-}
-a.checkout-btn {
-    padding: 15px 40px;
-    background: #5dafef;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 5px;
-    font-size: 14px;
-    display: inline-block;
-    color: #fff;
-    margin-top: 30px;
-}
-.checkout{
-    text-align: right;
-}
-
-/* =====================================
-16.CHECK-OUT.HTMLAREA
-===================================== */
-
-
-
-section.checkout-area {
-    padding: 120px 0;
-}
-
-.row.section-border {
-    border: 1px solid#edf4fd;
-    padding: 80px 30px;
-    border-radius: 5px;
-}
-
-.bill-chackout h4 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #3a4368 ;
-}
-.bill-chackout h4 a {
-    text-decoration: none;
-    color: #5dafef;
-}
-
-.billing-details h2 {
-    font-size: 20px;
-    color: #3a4368 ;
-    font-weight: 500;
-    margin-top: 50px;
-    margin-bottom: 16px;
-}
-.billing-details h5 {
-    font-size: 14px;
-    color: #536d87;
-    margin-top: 20px;
-}
-
-.billing-details input[type="text"] {
-    width: 100%;
-    height: 40px;
-    border: 1px solid#d0e2f4;
-    border-radius: 5px;
-    outline: 0;
-    margin-bottom: 24px;
-    padding: 15px;
-    box-shadow: none;
-}
-.billing-details input[type="email"]{
-    width: 100%;
-    height: 40px;
-    border: 1px solid#d0e2f4;
-    border-radius: 5px;
-    outline: 0;
-    margin-bottom: 24px;
-    padding: 15px;
-    box-shadow: none;
-}
-.checkout-area .order-summary {
-    margin-top: 83px;
-}
-h2.order-heading {
-    margin-bottom: 22px;
-}
-
 
 /* =====================================
 16CONTACT.HTMLAREA
