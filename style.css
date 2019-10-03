@@ -51,6 +51,9 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+.bold {
+    font-weight: 700;
+}
 
 
 .preloader-wrapper {
@@ -1032,6 +1035,8 @@ a.chart-btn {
     border-color: #ffffff;
     margin: 0px 0px 0px 40px;
 }
+
+
 .slider-heading-btns-slide-2 a.download-btn.download-btn-2:hover {
     background-color: #3464e0;
     color: #ffffff;
@@ -1747,9 +1752,38 @@ header {
     background: #3464e0;
     border: 2px solid#3464e0;
     padding: 13px 25px;
+    font-weight: 700;
+    font-size: large;
     margin-right: 0px;
     margin-top: 10px;
+    animation: flash 1500ms infinite;
 }
+
+
+@-webkit-keyframes flash {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-moz-keyframes flash {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-o-keyframes flash {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+  @keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
 #homepage-3 .homepage-4 .homepage-3-links li a.download-btn:hover {
     background: #3464e0;
     color: #ffffff;
@@ -1759,6 +1793,7 @@ header {
     background: #ffffff;
     color: #3e445b;
     border-color: #3464e0;
+    animation: none!important;
 }
 #homepage-3 .homepage-4 .homepage-3-links li a.download-btn.download-btn-2 i {
     font-size: 16px;
