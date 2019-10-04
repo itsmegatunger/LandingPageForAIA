@@ -55,6 +55,11 @@ a:focus, a:hover {
     font-weight: 700;
 }
 
+.upcase-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 
 .preloader-wrapper {
     background: #eef1fb;
@@ -6658,6 +6663,11 @@ a.blog-intro {
     text-decoration: none;
     margin-top: 20px;
 }
+
+.no-space {
+    margin-top: 0!important;
+}
+
 .blog-section-area .blog-box-content a h3 {
     text-decoration: none;
 }
@@ -6670,7 +6680,8 @@ a.blog-intro {
     color: #3a4368 ;
 }
 .single-blog-image {
-    max-height: 350px;
+    height: 250px;
+    object-fit: cover;
     overflow: hidden;
 }
 
