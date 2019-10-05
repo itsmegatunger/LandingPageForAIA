@@ -20,6 +20,12 @@
             cssEase: 'cubic-bezier(0.7, 0, 0.3, .1)',
         });
 
+        //Gallery
+        $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+          });
+
         function doAnimations(elements) {
             var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
             elements.each(function () {
@@ -97,13 +103,12 @@
             fade: true
         });
 
-
         $('.testimonial-carousel').slick({
             infinite: true,
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplaySpeed: 1700,
+            autoplaySpeed: 2000,
             slidesToShow: 2,
             slidesToScroll: 1,
             nextArrow: $('.testi-nav-right'),
@@ -133,6 +138,40 @@
             ]
         });
 
+        $('#platform-1').slick({
+            infinite: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 2000,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            nextArrow: $('.testi-nav-right'),
+            prevArrow: $('.testi-nav-left'),
+            responsive: [
+                {
+                    breakpoint:900,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
 
         $(".service-teatimonial").slick({
             infinite: true,
